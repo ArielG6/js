@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Ingrese sus datos:</p>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" value=""><br>
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" value=""><br>
+    <label for="edad">Edad:</label><br>
+    <input type="text" id="edad" name="edad" value="Años"><br><br>
+    <button type="button" onclick="ingresoDatos()">Enviar</button><br>
+    <a href="index.html">Volver</a>
+    <script>
+        function ingresoDatos(){
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var edad = document.getElementById("edad").value;
+            alert("Hola "+ nombre + " " + apellido + "!. Tienes " + edad + " años.");
+        }
+    </script>
+</body>
+</html>
